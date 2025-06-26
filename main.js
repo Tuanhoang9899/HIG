@@ -52,4 +52,24 @@ $(document).ready(function () {
             }
         ]
     });
+
+    let lastScrollTop = 0;
+    let header = $('#mainHeader');
+
+    $(window).on('scroll', function () {
+        let currentScroll = $(this).scrollTop();
+
+        if (currentScroll > lastScrollTop) {
+            // Cuộn xuống → ẩn header
+            header.removeClass('header-visible').addClass('header-hidden');
+        } else if (currentScroll < lastScrollTop && currentScroll > 0) {
+            // Cuộn lên (và đã cuộn khỏi top) → hiện header + nền xanh
+            header.removeClass('header-hidden').addClass('header-visible');
+        } else if (currentScroll === 0) {
+            // Quay lại đầu trang → reset về trong suốt
+            header.removeClass('header-visible header-hidden');
+        }
+
+        lastScrollTop = currentScroll;
+    });
 });

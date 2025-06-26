@@ -12,6 +12,20 @@ body {
     z-index: 999;
 }
 
+#mainHeader {
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+    background-color: transparent;
+}
+.header-hidden {
+    transform: translateY(-100%);
+}
+
+.header-visible {
+    transform: translateY(0);
+    background-color: #193E54 !important;
+}
+
 .main-header .nav-link {
     color: white;
     font-weight: 500;
@@ -23,10 +37,17 @@ body {
 .total_hero_start {
     position: absolute;
     width: 100%;
+    bottom: 20%;
 }
 
 .main-header .nav-link.active {
-    color: #f5b042; /* màu cam cho TRANG CHỦ */
+    color: #C48C5E; /* màu cam cho TRANG CHỦ */
+}
+.quote{
+    margin-bottom: 40px;
+}
+.quote svg{
+    width: 55px;
 }
 
 .main-header .logo {
@@ -69,12 +90,11 @@ body {
     display: block;
     object-fit: fill;
     filter: brightness(60%);
-    max-height: 700px;
 }
 
 .hero-content {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -158,7 +178,7 @@ body {
 .about-section .overlay-pattern {
     position: absolute;
     inset: 0;
-    background-image: url('img/anh_background_nha.jpg'); /* ảnh lưới mờ phía sau */
+    background-image: url('img/img_background_nha.png'); /* ảnh lưới mờ phía sau */
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.1;
@@ -231,16 +251,17 @@ body {
 }
 
 .project-title {
+    background: linear-gradient(to top, rgba(28, 61, 83, 0.6) 0%, /* đậm ở dưới */ rgba(28, 61, 83, 0) 100% /* trong suốt ở trên */);
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 15px;
+    padding: 70px 15px 15px 15px;
     color: #fff;
     font-weight: 500;
     text-align: center;
     font-size: 0.95rem;
-    backdrop-filter: blur(2px);
+    /*backdrop-filter: blur(2px);*/
 }
 
 .projects_detail .slick-slide{
@@ -314,6 +335,17 @@ body {
     background-color: #fff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.news-card i{
+    color: #C79156;
+}
+
+.news-card p.text-muted{
+    color: #C79156 !important;
+}
+.news-card h6{
+    color: #555555 !important;
+}
 .news_slide  .slick-slide{
     margin: 0 10px;
 }
@@ -323,7 +355,7 @@ body {
 }
 
 p.text-muted{
-    color: #dba45b !important;
+    color: #555555 !important;
     margin-bottom: 11px !important;
 }
 .news-card h6{
@@ -351,7 +383,7 @@ p.text-muted{
     margin-bottom: 30px;
 }
 .footer {
-    background-color: #0E3146;
+    background-color: #1A3D54;
     padding: 40px 0;
     font-size: 15px;
 }
@@ -359,8 +391,8 @@ p.text-muted{
 .footer input {
     background: transparent;
     border: none;
-    border-bottom: 1px solid #fff;
-    color: #fff;
+    border-bottom: 1px solid #c2c2c2;
+    color: #c2c2c2;
     width: 100%;
 }
 .footer input:focus {
@@ -382,6 +414,9 @@ p.text-muted{
     font-size: 18px;
     margin-left: 10px;
     cursor: pointer;
+}
+.social-icons svg{
+    width: 47px;
 }
 
 footer p{

@@ -23,7 +23,7 @@
 </head>
 
 <body>
-<header class="main-header">
+<header id="mainHeader" class="main-header">
     <div class="container position-relative">
         <div class="d-flex justify-content-between align-items-center flex-wrap">
             <!-- Left Nav -->
@@ -62,27 +62,26 @@
         <h5>Đồng hành kiến tạo</h5>
         <h1>VỮNG CHẮC NỀN TẢNG<br>VỮNG BƯỚC TƯƠNG LAI</h1>
 
-        <div class="total_hero_start">
-            <div class="row hero-stats text-center">
-                <div class="col-6 col-md-3">
-                    <div class="stat" data-count="15">0</div>
-                    <div class="label">Năm hoạt động</div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="stat" data-count="12">0</div>
-                    <div class="label">Lĩnh vực hoạt động</div>
-                </div>
-                <div class="col-6 col-md-3 mt-4 mt-md-0">
-                    <div class="stat" data-count="1000">0</div>
-                    <div class="label">Đối tác & khách hàng</div>
-                </div>
-                <div class="col-6 col-md-3 mt-4 mt-md-0">
-                    <div class="stat" data-count="500">0</div>
-                    <div class="label">Nhân sự</div>
-                </div>
+    </div>
+    <div class="total_hero_start">
+        <div class="row hero-stats text-center">
+            <div class="col-6 col-md-3">
+                <div class="stat" data-count="15">0</div>
+                <div class="label">Năm hoạt động</div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat" data-count="12">0</div>
+                <div class="label">Lĩnh vực hoạt động</div>
+            </div>
+            <div class="col-6 col-md-3 mt-4 mt-md-0">
+                <div class="stat" data-count="1000">0</div>
+                <div class="label">Đối tác & khách hàng</div>
+            </div>
+            <div class="col-6 col-md-3 mt-4 mt-md-0">
+                <div class="stat" data-count="500">0</div>
+                <div class="label">Nhân sự</div>
             </div>
         </div>
-
     </div>
 </section>
 
@@ -99,7 +98,7 @@
             <div class="col-md-6 d-flex about_content align-items-center bg-light position-relative">
                 <div class="overlay-pattern"></div>
                 <div class="z-2 position-relative">
-                    <h2 class="text-uppercase fw-bold mb-4" style="color: #dba45b;">Về chúng tôi</h2>
+                    <h2 class="text-uppercase mb-4" style="color: #dba45b;">Về chúng tôi</h2>
                     <p class="text-muted">
                         Với hơn hai thập kỷ hình thành và phát triển, tập đoàn H Đông Dương không ngừng mở rộng quy mô, hoàn thiện năng lực và đổi mới mô hình hoạt động với mục tiêu trở thành một trong những tập đoàn lớn mạnh hàng đầu của Việt Nam và khu vực Đông Nam Á.
                     </p>
@@ -120,21 +119,26 @@
         <div class="row align-items-center">
 
             <!-- Cột trái -->
-            <div class="col-lg-5 mb-4 mb-lg-0">
-                <div class="mb-3">
-                    <span class="display-5 text-warning"><i class="fa-solid fa-quote-left"></i></span>
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="quote">
+                    <span class="display-5 text-warning">
+                       <svg width="65" height="46" viewBox="0 0 65 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M40.4 45.4V27.4C40.4 11.2 47.2 3.4 62.4 -8.58307e-06L64.8 7C54.6 10.8 50.8 15.8 51.4 24.4H58.6V45.4H40.4ZM0.400001 45.4V27.4C0.400001 11.2 7.2 3.4 22.4 -8.58307e-06L24.8 7C14.6 10.8 10.8 15.8 11.4 24.4H18.8V45.4H0.400001Z" fill="#E6AF6C"/>
+</svg>
+
+                    </span>
                 </div>
-                <h2 class="fw-bold text-warning">Thông điệp<br>định vị thương hiệu</h2>
+                <h2 class="text-warning">Thông điệp<br>định vị thương hiệu</h2>
                 <p class="mt-3 text-light small">
-                    Tập đoàn H Đông Dương định vị là một tổ chức đầu tư chiến lược, điều phối hệ sinh thái & quản trị chuyên nghiệp.
-                    Chúng tôi không chỉ xây dựng công trình mà còn kiến tạo giá trị, tối ưu hiệu quả vận hành và thúc đẩy sự phát triển bền vững
-                    trên mọi lĩnh vực mà Tập đoàn tham gia.
+                    Tập đoàn H Đông Dương định vị là một tổ chức đầu tư chiến <br> lược, điều phối hệ sinh thái & quản trị chuyên nghiệp.
+                    Chúng tôi <br> không chỉ xây dựng công trình mà còn kiến tạo giá trị, tối ưu <br> hiệu quả vận hành và thúc đẩy sự phát triển bền vững
+                    trên mọi <br> lĩnh vực mà Tập đoàn tham gia.
                 </p>
                 <a href="#" class="btn btn-outline-light mt-3 px-4">XEM THÊM</a>
             </div>
 
             <!-- Cột phải: 4 icon -->
-            <div class="col-lg-7">
+            <div class="col-lg-6">
                 <div class="row g-4">
                     <!-- Icon 1 -->
                     <div class="col-sm-6">
@@ -247,11 +251,13 @@
         <!-- Tiêu đề -->
         <h2 class="text-uppercase mb-3" style="color: #dba45b;">Dự án</h2>
         <p class="text-muted mb-4 px-lg-5">
-            Tập đoàn H Đông Dương định hướng phát triển theo mô hình liên kết đa ngành, xây dựng một hệ sinh thái mới, tối ưu hiệu quả đầu tư và vận hành.
-            Trọng tâm của chiến lược này được triển khai dựa trên hai nguyên tắc cốt lõi: liên kết đa ngành để tạo ra giá trị cộng hưởng
+            Tập đoàn H Đông Dương định hướng phát triển theo mô hình liên kết đa ngành, xây dựng một hệ sinh thái mới, tối ưu hiệu quả đầu tư
+            <br> và vận hành.
+            Trọng tâm của chiến lược này được triển khai dựa trên hai nguyên tắc cốt lõi: liên kết đa ngành để tạo ra giá trị cộng
+            <br> hưởng
             và hợp tác cùng phát triển nhằm mở rộng hệ sinh thái một cách linh hoạt và bền vững.
         </p>
-        <a href="#" class="btn btn-outline-dark mb-5 px-4">XEM THÊM</a>
+        <a href="#" class="btn btn-outline-dark mb-5 mt-4 px-4">XEM THÊM</a>
 
         <!-- Dự án: 4 ảnh -->
         <div class="row projects_detail g-4">
@@ -297,7 +303,7 @@
 <section class="real-estate-feature py-5 position-relative">
     <div class="container position-relative">
         <!-- Tiêu đề -->
-        <h2 class="text-uppercase mb-5" style="color: #dba45b;">Bất động sản tiêu biểu</h2>
+        <h2 class="text-uppercase mb-5" style="color: #dba45b;font-weight: 400; margin-left: 50px">Bất động sản <br> tiêu biểu</h2>
 
         <div class="row">
             <!-- Cột ảnh bên trái -->
@@ -310,15 +316,15 @@
             <!-- Box nội dung nổi lên ảnh -->
             <div class="col-lg-5">
                 <div class="content-box shadow rounded-3">
-                    <h4 class="" style="color: #dba45b;">Dự án BáchGiang - Phước Long</h4>
+                    <h4 class="" style="color: #dba45b;">Dự án Bách     Giang - Phước Long</h4>
                     <p class="text-muted small mt-3 mb-2">
                         Khu dân cư Bách Giang là dự án đất nền được triển khai trên địa phận phường Phước Long A, quận 9, Tp.HCM.
                         Được biết, dự án sẽ cung ứng cho thị trường BĐS khu vực các sản phẩm đất nền có diện tích đa dạng từ 100m²/nền.
                     </p>
-                    <p class="small mb-1">
+                    <p class="small mb-1" style="color: #555555">
                         <strong>Vị trí:</strong> Phước Long A – Thành Phố Thủ Đức, Tp Hồ Chí Minh
                     </p>
-                    <p class="small">
+                    <p class="small" style="color: #555555">
                         <strong>Quy mô:</strong> 13 Tầng, 24,000m² CFA
                     </p>
 
@@ -339,9 +345,10 @@
                 <div class="col-md-5 text-white d-flex align-items-center left position-relative">
                     <div class="overlay-pattern"></div>
                     <div class="z-1 position-relative">
-                        <h2 class=" mb-3" style="color: #dba45b;">Quan hệ cổ đông</h2>
+                        <h2 class=" mb-3" style="color: #dba45b; font-weight: 400">Quan hệ cổ đông</h2>
                         <p class="small mb-4">
-                            Chúng tôi cam kết minh bạch, chuyên nghiệp trong công bố thông tin và đồng hành cùng cổ đông trên hành trình phát triển bền vững.
+                            Chúng tôi cam kết minh bạch, chuyên nghiệp trong <br> công bố thông tin và đồng hành cùng cổ đông trên
+                            <br> hành trình phát triển bền vững.
                         </p>
                         <a href="#" class="btn btn-outline-light px-4">XEM THÊM</a>
                     </div>
@@ -349,7 +356,7 @@
 
                 <!-- Cột phải: ảnh -->
                 <div class="col-md-7">
-                    <img src="img/tay.jpg" alt="Quan hệ cổ đông" class="img-fluid w-100 h-100 object-fit-cover">
+                    <img src="img/tay.jpg" style="opacity: 0.6" alt="Quan hệ cổ đông" class="img-fluid w-100 h-100 object-fit-cover">
                 </div>
 
             </div>
@@ -491,7 +498,7 @@
             <div class="col-lg-4">
                 <img src="img/logo-mau.png" alt="HIG Logo" style="width: 60px;">
                 <h5 class="mt-3">H INDOCHINA GROUP (HIG)</h5>
-                <h6 class="mt-4">ĐĂNG KÝ NHẬN THÔNG TIN</h6>
+                <h6 class="mt-4" style="color: #fff !important;">ĐĂNG KÝ NHẬN THÔNG TIN</h6>
                 <p>Đăng ký ngay để nhận những thông tin, cơ hội đầu tư và cập nhật mới nhất từ chúng tôi!</p>
                 <input type="email" id="email" placeholder="Email">
                 <button class="btn btn-subscribe" id="subscribe-btn">ĐĂNG KÝ</button>
@@ -527,13 +534,35 @@
 
         <!-- Bottom -->
         <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 pt-3">
-            <p class="mb-0">© 2025 HIG. All Rights Reserved.<br>Designed & Maximize Online Power by THEMAX</p>
+            <p class="mb-0" style="color: #A4AABB">© 2025 HIG. All Rights Reserved.<br>Designed & Maximize Online Power by THEMAX</p>
             <div class="social-icons mt-3 mt-md-0">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-youtube"></i>
-                <i class="fab fa-tiktok"></i>
-                <i class="fas fa-phone"></i>
-                <i class="fas fa-circle-chevron-up"></i>
+                <a href="#">
+                    <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="0.96582" width="39.176" height="39.176" rx="19.588" fill="#E0E2E2"/>
+                        <path d="M21.3882 32.7506V22.2088H24.9267L25.4565 18.1004H21.3882V15.4774C21.3882 14.2879 21.7186 13.4773 23.4244 13.4773L25.5999 13.4763V9.80185C25.2235 9.75196 23.9322 9.64014 22.4298 9.64014C19.2932 9.64014 17.1458 11.5546 17.1458 15.0707V18.1005H13.5981V22.2089H17.1457V32.7507L21.3882 32.7506Z" fill="#1E4966"/>
+                    </svg>
+
+                </a>
+                <a href="#">
+                    <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.607666" y="0.96582" width="39.176" height="39.176" rx="19.588" fill="#E0E2E2"/>
+                        <path d="M31.2509 15.1981C31.1243 14.7249 30.8749 14.293 30.5275 13.9457C30.1802 13.5984 29.7472 13.3478 29.2717 13.219C27.5215 12.7515 20.5258 12.7515 20.5258 12.7515C20.5258 12.7515 13.5301 12.7515 11.7799 13.219C11.3044 13.3478 10.8714 13.5984 10.524 13.9457C10.1767 14.293 9.92728 14.7249 9.80072 15.1981C9.33264 16.9446 9.33264 20.5867 9.33264 20.5867C9.33264 20.5867 9.33264 24.2288 9.80072 25.9753C9.92728 26.4485 10.1767 26.8803 10.524 27.2276C10.8714 27.5749 11.3044 27.8255 11.7799 27.9543C13.5301 28.4219 20.5258 28.4219 20.5258 28.4219C20.5258 28.4219 27.5215 28.4219 29.2717 27.9543C29.7472 27.8255 30.1802 27.5749 30.5275 27.2276C30.8749 26.8803 31.1243 26.4485 31.2509 25.9753C31.719 24.2288 31.719 20.5867 31.719 20.5867C31.719 20.5867 31.719 16.9446 31.2509 15.1981Z" fill="#1E4966"/>
+                        <path d="M18.2875 22.8251V17.2285L23.8841 20.0268L18.2875 22.8251Z" fill="#E0E2E2"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.215332" y="0.96582" width="39.176" height="39.176" rx="19.588" fill="#E0E2E2"/>
+                        <path d="M25.9721 14.0648C24.9407 13.4213 24.2025 12.3709 23.9092 11.1501C23.9092 11.1501 23.9092 11.1217 23.8997 11.1123C23.8808 11.0271 23.8429 10.9514 23.8335 10.8662V10.8473C23.8145 10.7054 23.7956 10.554 23.7956 10.3931V9.91992H20.4267V23.5942C20.4267 25.184 19.1587 26.4805 17.5972 26.4805C17.1714 26.4805 16.9632 26.4237 16.4995 26.206C16.4238 26.1587 16.3197 26.1303 16.2913 26.0925C15.3639 25.6193 14.7299 24.6541 14.7299 23.5374C14.7299 21.9571 15.998 20.6795 17.5688 20.6795C17.8717 20.6795 18.1556 20.7269 18.43 20.812V17.3201C18.1556 17.2823 17.8811 17.2633 17.5972 17.2633C14.181 17.2633 11.4083 20.0928 11.4083 23.5847C11.4083 25.7707 12.4966 27.7012 14.1526 28.8368C15.1368 29.5087 16.3008 29.7831 17.5688 29.7831C20.9945 29.7831 23.7672 26.982 23.7672 23.5374V16.6388C25.0826 17.5851 26.7008 18.1434 28.442 18.1434V14.7556C27.5714 14.7556 26.7008 14.519 25.9627 14.0459V14.0648H25.9721Z" fill="#1E4966"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.823975" y="0.96582" width="39.176" height="39.176" rx="19.588" fill="#E0E2E2"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0866 13.6025C13.2986 12.328 13.7269 11.9705 14.2434 11.8042C14.6008 11.7107 14.9757 11.7055 15.3355 11.789C15.8093 11.9265 15.9346 12.031 17.4882 13.5764C18.853 14.9334 18.9894 15.0805 19.1202 15.3459C19.3704 15.8117 19.4095 16.3619 19.2276 16.8583C19.0899 17.2364 18.8944 17.4866 18.0666 18.3157L17.5267 18.856C17.385 18.9998 17.3516 19.2183 17.4441 19.3977C18.6436 21.4406 20.3454 23.1442 22.3884 24.3473C22.6236 24.473 22.9132 24.4325 23.1046 24.247L23.6238 23.7369C23.9447 23.4085 24.2846 23.0991 24.6416 22.8102C25.2024 22.4665 25.9011 22.4358 26.4899 22.7291C26.7777 22.8666 26.8727 22.9518 28.2803 24.3542C29.7319 25.7992 29.7732 25.8446 29.933 26.176C30.2336 26.7245 30.2305 27.3888 29.9247 27.9345C29.7691 28.2424 29.6741 28.3538 28.8574 29.187C28.3643 29.6902 27.9002 30.1494 27.8258 30.2168C27.1521 30.7737 26.2876 31.0468 25.4156 30.9785C23.8201 30.8333 22.2759 30.341 20.8914 29.5362C17.8244 27.9141 15.2135 25.5506 13.2972 22.6617C12.8798 22.0571 12.5088 21.422 12.1872 20.7616C11.3244 19.2855 10.8789 17.6034 10.8981 15.8945C10.9639 15.0005 11.3934 14.1723 12.0866 13.6025Z" fill="#1E4966"/>
+                    </svg>
+
+                </a>
             </div>
         </div>
     </div>
