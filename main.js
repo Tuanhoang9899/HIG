@@ -35,6 +35,7 @@ $(document).ready(function () {
         ]
     });
 
+
     $('.news_slide').slick({
         dots: false,
         arrows: false,

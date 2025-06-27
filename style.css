@@ -55,9 +55,16 @@ body {
 .main-header .nav-link {
     color: white;
     font-weight: 500;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem 0.5rem 0;
     text-transform: uppercase;
     font-size: 0.9rem;
+}
+#mainHeader .nav{
+    gap: 20px;
+}
+
+a:hover{
+    color: #C48C5E !important;
 }
 
 .total_hero_start {
@@ -127,8 +134,8 @@ body {
 }
 
 .hero-content h5 {
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: 33px;
+    font-weight: 300;
     margin-bottom: 10px;
 }
 
@@ -148,11 +155,12 @@ body {
 .hero-stats .label {
     font-size: 1rem;
     color: #ddd;
+    font-weight: 300;
 }
 
 @media (max-width: 768px) {
     .hero-content h1 {
-        font-size: 1.8rem;
+        font-size: 24px;
     }
 
     .hero-stats .stat {
@@ -212,12 +220,14 @@ body {
 }
 
 .brand-message {
-    background-color: #0c2b46; /* nền xanh đậm */
+    background-color: rgba(26, 61, 84, 1); /* nền xanh đậm */
     background-image: url('img/Mask group_brand.png'); /* ảnh lưới nếu cần */
     background-size: cover;
     background-position: center;
     position: relative;
 }
+
+
 
 .brand-message h2{
     font-size: 40px;
@@ -255,11 +265,44 @@ body {
 }
 
 .icon-box p {
+    font-weight: 300;
     margin-top: 10px;
     font-size: 0.95rem;
     color: #dba45b;
 }
 
+.real-estate .property-nav {
+    right: 30%;
+    position: absolute;
+    display: flex
+;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+    bottom: 10%;
+}
+
+.real-estate .property-nav button {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.real-estate .property-nav button i{
+    color: #C79156;
+}
+
+.real-estate .property-nav button:hover {
+    background-color: #ffffff;
+}
+
+.right_brand_message .g-4{
+    --bs-gutter-y: 65px;
+}
 
 .project-box {
     aspect-ratio: 3 / 4; /* Tự động giữ tỉ lệ ảnh đẹp trên mọi thiết bị */
@@ -292,6 +335,10 @@ body {
 
 .projects_detail .slick-slide{
     margin: 0 10px;
+}
+
+.projects_detail  .slick-list {
+    padding: 0 100px; /* kéo vùng hiển thị rộng ra 2 bên */
 }
 
 
@@ -381,6 +428,7 @@ body {
 }
 
 p.text-muted{
+    font-weight: 300;
     color: #555555 !important;
     margin-bottom: 11px !important;
 }
@@ -471,6 +519,10 @@ ul.list-unstyled {
     display: grid
 ;
     gap: 10px;
+}
+
+.list-unstyled li a,footer p{
+    font-weight: 300;
 }
 .social-icons i{
     color: #fff;
@@ -602,6 +654,16 @@ a{
     .icon_round{
         display: flex;
         justify-content: center;
+    }
+    .hero-content h5 {
+        font-size: 25px;
+    }
+    .real-estate .property-nav{
+        right: 40%;
+        bottom: unset;
+    }
+    section.real-estate {
+        margin-bottom: 35px;
     }
 }
 
