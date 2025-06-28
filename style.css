@@ -1,28 +1,106 @@
+/* Black */
 @font-face {
     font-family: 'SVN-Gotham';
-    src: url('fonts/SVN-Gotham Regular.otf') format('opentype');
-    font-weight: 400;
+    src: url('fonts/SVN-Gotham Black.otf') format('opentype');
+    font-weight: 900;
     font-style: normal;
 }
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('fonts/SVN-Gotham Black Italic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+}
 
+/* Bold */
 @font-face {
     font-family: 'SVN-Gotham';
     src: url('fonts/SVN-Gotham Bold.otf') format('opentype');
     font-weight: 700;
     font-style: normal;
 }
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('fonts/SVN-Gotham Bold Italic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
 
+/* Book Italic (assumed weight 500) */
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('fonts/SVN-Gotham Book Italic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Regular & Italic */
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('fonts/SVN-Gotham Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('fonts/SVN-Gotham Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Light */
 @font-face {
     font-family: 'SVN-Gotham';
     src: url('fonts/SVN-Gotham Light.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'SVN-Gotham';
-    src: url('fonts/SVN-Gotham Italic.otf') format('opentype');
-    font-weight: 400;
+    src: url('fonts/SVN-Gotham Light Italic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Thin */
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('fonts/SVN-Gotham Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('fonts/SVN-Gotham Thin Italic.otf') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* Ultra */
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('fonts/SVN-Gotham Ultra.otf') format('opentype');
+    font-weight: 950;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('fonts/SVN-Gotham Ultra Italic.otf') format('opentype');
+    font-weight: 950;
+    font-style: italic;
+}
+
+/* XLight */
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('fonts/SVN-Gotham XLight.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('fonts/SVN-Gotham XLight Italic.otf') format('opentype');
+    font-weight: 200;
     font-style: italic;
 }
 body {
@@ -209,6 +287,12 @@ a:hover{
 .btn{
     border-color: #C79156 !important;
 }
+
+.btn:hover{
+    background: #C79156 !important;
+    color: #ffffff !important;
+}
+
 .about-section .overlay-pattern {
     position: absolute;
     inset: 0;
@@ -360,6 +444,10 @@ a:hover{
 .content-box p{
     margin-bottom: 20px !important;
 }
+
+.content-box p.text-muted{
+    margin-bottom: 20px !important;
+}
 @media (max-width: 992px) {
     .content-box {
         position: static;
@@ -402,7 +490,6 @@ a:hover{
 }
 
 .news-card {
-    border: 1px solid #eee;
     padding: 1rem;
     border-radius: 10px;
     background-color: #fff;
@@ -423,8 +510,46 @@ a:hover{
     margin: 0 10px;
 }
 .news-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    cursor: pointer;
+    /*transform: translateY(-5px);*/
+    /*box-shadow: 0 10px 20px rgba(0,0,0,0.08);*/
+}
+
+.news-card {
+    padding-left: 0;
+    border-radius: 0;
+    border-right: 1px solid #E0E2E2;
+}
+
+.news-card .img{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.news-card:hover img{
+    transform: scale(1.2);
+    transition: all 1s ease-in-out;
+}
+.news-card .img::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(255, 235, 150, 0.5); /* nền vàng nhạt có độ mờ */
+    transition: height 0.4s ease;
+    z-index: 1;
+}
+
+.news-card:hover .img::before {
+    height: 100%;
+}
+
+.news-card:hover h6{
+    color: #C79156 !important;
+
 }
 
 p.text-muted{

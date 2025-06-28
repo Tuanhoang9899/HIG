@@ -36,23 +36,23 @@ $(document).ready(function () {
     });
 
 
-    $('.news_slide').slick({
-        dots: false,
-        arrows: false,
-        margin: 10,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1
-                }
-            }
-        ]
-    });
+    // $('.news_slide').slick({
+    //     dots: false,
+    //     arrows: false,
+    //     margin: 10,
+    //     infinite: true,
+    //     speed: 500,
+    //     slidesToShow: 4,
+    //     slidesToScroll: 1,
+    //     responsive: [
+    //         {
+    //             breakpoint: 768,
+    //             settings: {
+    //                 slidesToShow: 1
+    //             }
+    //         }
+    //     ]
+    // });
 
     let lastScrollTop = 0;
     let header = $('#mainHeader');
