@@ -302,6 +302,24 @@ a:hover{
     opacity: 0.1;
     z-index: 1;
 }
+@media (min-width: 767px) {
+    h2 {
+        font-size: 45px !important;
+        font-weight: 300 !important;
+        color: #c79156 !important;
+    }
+}
+
+.about-section p{
+    text-align: justify;
+    font-size: 14px;
+}
+.left_brand_message p{
+    text-align: justify;
+}
+.about-section .btn{
+    color: #555555 !important;
+}
 
 .brand-message {
     background-color: rgba(26, 61, 84, 1); /* nền xanh đậm */
@@ -442,7 +460,18 @@ a:hover{
     padding: 60px ;
 }
 .content-box p{
+    text-align: justify;
     margin-bottom: 20px !important;
+}
+.shareholder-section p {
+    text-align: justify;
+}
+
+.news-card h6 {
+    text-align: justify;
+}
+.list-unstyled li a, footer p {
+    text-align: justify;
 }
 
 .content-box p.text-muted{
@@ -472,7 +501,6 @@ a:hover{
 }
 
 .shareholder-section h2{
-    font-size: 37px !important;
     margin-bottom: 25px !important;
 }
 .shareholder-section p{

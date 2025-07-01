@@ -35,6 +35,24 @@ $(document).ready(function () {
         ]
     });
 
+    $('.client-grid').slick({
+        dots: false,
+        arrows: false,
+        margin: 10,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3
+                }
+            }
+        ]
+    });
+
 
     // $('.news_slide').slick({
     //     dots: false,
