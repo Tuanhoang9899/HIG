@@ -572,11 +572,10 @@ a.btn:hover{
 .shareholder-section .overlay-pattern {
     position: absolute;
     inset: 0;
-    background-image: url('https://yourdomain.com/bg-pattern.svg'); /* ảnh vòng tròn mờ nếu có */
+    background-image: url('img/bg-quan-he-co-dong.png'); /* ảnh vòng tròn mờ nếu có */
     background-repeat: no-repeat;
     background-position: bottom left;
-    background-size: 50%;
-    opacity: 0.1;
+    background-size: 75%;
     z-index: 0;
 }
 
@@ -767,6 +766,20 @@ footer h6{
     padding: 7px 25px;
 }
 
+.footer{
+    position: relative;
+}
+.footer .overlay-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: url('img/bg_footer.png'); /* ảnh vòng tròn mờ nếu có */
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 27%;
+    z-index: 0;
+}
+
+
 ul.list-unstyled {
     display: grid
 ;
@@ -791,6 +804,50 @@ h2{
 }
 .hero-content h5,.hero-stats .label{
     font-family: 'Roboto', sans-serif !important;
+}
+
+.back-to-top {
+    background-color: #C79156;
+    text-decoration: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    z-index: 999;
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 100%;
+}
+
+.back-to-top:hover {
+    background-color: #ecb87f; /* lighten(deeppink, ~12%) */
+}
+
+.back-to-top:active {
+    box-shadow: none;
+    background-color: #C79156; /* darken(deeppink, ~12%) */
+}
+
+.back-to-top svg.icon__arrow-up {
+    width: 20px;
+    height: 20px;
+}
+.user{
+    text-decoration: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    z-index: 999;
+    position: fixed;
+    right: 0;
+    bottom: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*menu mobile*/
@@ -1002,6 +1059,12 @@ h2{
         min-height: 350px;
         object-fit: cover;
         height: unset;
+    }
+    .footer .overlay-pattern{
+        background-size: 80%;
+    }
+    .footer-bottom p,.footer-bottom .social-icons{
+        width: 100%;
     }
 
 }
