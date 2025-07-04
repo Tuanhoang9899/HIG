@@ -25,6 +25,7 @@ $(document).ready(function () {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
+        autoplay:true,
         responsive: [
             {
                 breakpoint: 768,
@@ -43,6 +44,7 @@ $(document).ready(function () {
         speed: 500,
         slidesToShow: 6,
         slidesToScroll: 1,
+        autoplay:true,
         responsive: [
             {
                 breakpoint: 768,
@@ -52,6 +54,10 @@ $(document).ready(function () {
             }
         ]
     });
+
+    if (window.innerWidth <= 768) {
+        $('.text-muted').find('br').remove();
+    }
 
 
     // $('.news_slide').slick({
