@@ -393,7 +393,12 @@
     background-size: 100px 100px, 150px 150px, 200px 200px;
     opacity: 0.6;
 }
-
+.core-values-section .section-title {
+    color: #E6AF6C !important;
+    line-height: 64px !important;
+    font-size: 48px !important;
+    font-weight: 600 !important;
+}
 .core-values-content {
     text-align: center;
 }
