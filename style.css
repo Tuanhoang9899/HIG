@@ -103,9 +103,57 @@
     font-weight: 200;
     font-style: italic;
 }
+
+@font-face {
+    font-family: 'Roboto-italic';
+    src: url('fonts/Roboto-BoldItalic.ttf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto-italic';
+    src: url('fonts/Roboto-MediumItalic.ttf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto-italic';
+    src: url('fonts/Roboto-Light.ttf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto-italic';
+    src: url('fonts/Roboto-LightItalic.ttf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Bold.ttf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
 body {
     margin: 0;
     font-family: 'SVN-Gotham', sans-serif !important;
+}
+.fs-18{
+    font-size: 18px !important;
+}
+@media screen and (min-width: 1200px) {
+    .fs-36{
+        font-size: 36px !important;
+    }
+    .fs-64{
+        font-size: 64px !important;
+    }
 }
 .main-header {
     width: 100%;
