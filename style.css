@@ -731,6 +731,9 @@ ul.list-unstyled {
 a{
     text-decoration: unset !important;
 }
+h2{
+    text-transform: capitalize;
+}
 
 
 /*menu mobile*/
@@ -881,9 +884,7 @@ a{
         width: 173px;
         height: 173px;
     }
-    h2{
-        text-transform: capitalize;
-    }
+
 }
 
 
