@@ -140,6 +140,30 @@
     font-weight: 400;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/FZ Poppins-Black.ttf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/FZ Poppins-BlackItalic.ttf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/FZ Poppins-Bold.ttf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/FZ Poppins-BoldItalic.ttf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
 body {
     margin: 0;
     font-family: 'SVN-Gotham', sans-serif !important;
