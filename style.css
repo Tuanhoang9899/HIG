@@ -394,6 +394,7 @@ a.btn:hover{
     font-size: 16px;
 }
 .left_brand_message p{
+    font-size: 16px;
     text-align: justify;
     width: 70%;
 }
@@ -529,15 +530,19 @@ a.btn:hover{
     z-index: 1;
 }
 
+h2,h4,h6{
+    line-height: 1.3em !important;
+}
+
 .content-box {
     background-color: #F5F5F5;
     position: absolute;
     top: 35%;
-    left: 55%;
+    left: 53%;
     transform: translateY(-50%);
-    width: 45%;
+    width: 50%;
     z-index: -1;
-    padding: 60px ;
+    padding: 75px 90px;
 }
 .content-box p{
     text-align: justify;
@@ -662,7 +667,7 @@ a.btn:hover{
 }
 
 p.text-muted{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     color: #555555 !important;
     margin-bottom: 11px !important;
@@ -777,7 +782,7 @@ footer h6{
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 27%;
-    z-index: 0;
+    z-index: -1;
 }
 
 
@@ -1003,7 +1008,7 @@ h2{
         font-size: 28px !important;
     }
     .right_brand_message .g-4 {
-        --bs-gutter-y: 10px;
+        --bs-gutter-y: 26px;
     }
     .container{
         padding-left: 22px !important;
@@ -1065,6 +1070,26 @@ h2{
         background-size: 80%;
     }
     .footer-bottom p,.footer-bottom .social-icons{
+        width: 100%;
+        text-align: center;
+    }
+    .hero-content h1{
+        margin-top: 1rem;
+    }
+    .shareholder-section img{
+        max-height: 300px;
+    }
+    .back-to-top{
+        width: 40px;
+        height: 40px;
+        right: 15px;
+    }
+    .back-to-top svg.icon__arrow-up {
+        width: 15px;
+        height: 15px;
+    }
+    .news-card img{
+        max-height: 92px;
         width: 100%;
     }
 
