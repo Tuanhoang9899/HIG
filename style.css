@@ -838,7 +838,7 @@ a{
         font-size: 40px;
     }
     .about_content{
-        padding: 2.6rem 1.5rem !important;
+        padding: 2.6rem 15px !important;
     }
     .quote svg {
         width: 45px;
@@ -850,7 +850,7 @@ a{
         padding: 35px;
     }
     .shareholder-section .left {
-        padding: 30px;
+        padding: 30px 15px;
     }
     .icon_round{
         display: flex;
@@ -865,6 +865,24 @@ a{
     }
     section.real-estate {
         margin-bottom: 35px;
+    }
+    .projects-section p.text-muted {
+        text-align: justify;
+    }
+    .brand_round{
+        display: grid !important;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .icon-box.text-center {
+        height: 186px;
+        width: 188px;
+    }
+    .circle-icon{
+        width: 173px;
+        height: 173px;
+    }
+    h2{
+        text-transform: capitalize;
     }
 }
 
