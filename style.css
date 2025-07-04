@@ -223,7 +223,7 @@ a:hover{
 .total_hero_start {
     position: absolute;
     width: 100%;
-    bottom: 20%;
+    bottom: 10%;
 }
 
 .main-header .nav-link.active {
@@ -293,7 +293,8 @@ a:hover{
 }
 
 .hero-content h1 {
-    font-size: 2.5rem;
+    margin-top: 2rem;
+    font-size: 3.5rem;
     font-weight: 700;
     line-height: 1.4;
     text-transform: uppercase;
@@ -329,7 +330,7 @@ a:hover{
 }
 
 .hero-stats .stat {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
     color: #E6AE6C;
 }
@@ -728,7 +729,8 @@ p.text-muted{
 }
 
 a.btn{
-    padding-top: 9px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 footer p{
@@ -743,8 +745,16 @@ footer h5{
 footer h6{
     font-family: 'FZ Poppins', sans-serif !important;
     color: #dba45b !important;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     font-weight: 700;
+}
+.col_final > p{
+    margin-bottom: 35px;
+}
+
+.col_middle h6,.col_final h6{
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .footer input{
@@ -868,7 +878,7 @@ h2{
         margin-top: 0;
     }
     .total_hero_start{
-        padding: 30px 0;
+        padding: 30px 22px;
         background: #1C3D53;
     }
     .hero-content{
@@ -885,7 +895,7 @@ h2{
         max-width: 55px;
     }
     .hero-stats .stat {
-        font-size: 40px;
+        font-size: 35px;
     }
     .about_content{
         padding: 2.6rem 22px !important;
@@ -900,7 +910,7 @@ h2{
         padding: 30px;
     }
     .shareholder-section .left {
-        padding: 30px 22px;
+        padding: 65px 22px;
     }
     .icon_round{
         display: flex;
@@ -946,11 +956,13 @@ h2{
     }
     .news_slide .col-md-3:nth-child(even) .news-card{
         border-right: none;
+        padding-right: 0;
     }
     .shareholder-section h2{
         margin-bottom: 20px !important;
     }
     .news-card h6 {
+        line-height: 1.4;
         margin-bottom: 20px !important;
         display: -webkit-box;
         -webkit-line-clamp: 4;       /* Giới hạn 4 dòng */
@@ -976,7 +988,21 @@ h2{
     .about-section p,.left_brand_message p{
         font-size: 15px;
     }
-
+    footer .col_middle{
+        justify-content: start !important;
+    }
+    .col_middle h6, .col_final h6 {
+        margin-top: 0px;
+    }
+    .real-estate .real-estate-feature{
+        padding-top: 0 !important;
+        margin-bottom: 70px;
+    }
+    .img-banner{
+        min-height: 350px;
+        object-fit: cover;
+        height: unset;
+    }
 
 }
 
