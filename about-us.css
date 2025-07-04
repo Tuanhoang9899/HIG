@@ -247,17 +247,16 @@
 
 }
 
-.section-title {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #2c5f7a;
-    margin-bottom: 20px;
+.mission-section .section-title {
+    font-size: 48px !important;
+    font-weight: 700 !important;
+    color: #1A3D54 !important;
 }
 
 .mission-slogan {
     font-size: 1rem;
     font-weight: bold;
-    color: #2c5f7a;
+    color: #333;
     line-height: 1.5;
     letter-spacing: 0.5px;
 }
@@ -267,17 +266,21 @@
 }
 
 .main-description {
-    font-size: 1rem;
+    font-size: 24px;
     color: #333;
     margin-bottom: 30px;
     line-height: 1.7;
-    font-weight: 400;
+    font-family: 'Roboto';
+    font-weight: 600;
 }
 
 .mission-points {
     list-style: none;
     padding-left: 0;
     text-align: justify;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 400;
 }
 
 .mission-point {
