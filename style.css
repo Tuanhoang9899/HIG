@@ -426,7 +426,7 @@ a.btn:hover{
     padding: 17px;
     width: 200px;
     height: 200px;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -439,10 +439,10 @@ a.btn:hover{
     width: 75px;
 }
 .icon-box.text-center{
-    height: 215px;
-    width: 215px;
+    height: 212px;
+    width: 214px;
     padding: 5px;
-    border: 2px solid #dba45b;
+    border: 1px solid #dba45b;
     border-radius: 50%;
 }
 
@@ -662,6 +662,7 @@ a.btn:hover{
 }
 
 p.text-muted{
+    font-size: 14px;
     font-weight: 300;
     color: #555555 !important;
     margin-bottom: 11px !important;
@@ -991,8 +992,8 @@ h2{
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
     .icon-box.text-center {
-        height: 174px;
-        width: 176px;
+        height: 171px;
+        width: 173px;
     }
     .circle-icon{
         width: 160px;
@@ -1002,7 +1003,7 @@ h2{
         font-size: 28px !important;
     }
     .right_brand_message .g-4 {
-        --bs-gutter-y: 17px;
+        --bs-gutter-y: 10px;
     }
     .container{
         padding-left: 22px !important;
