@@ -140,6 +140,33 @@
     font-weight: 400;
     font-style: normal;
 }
+@font-face {
+    font-family: 'FZ Poppins';
+    src: url('fonts/FZ Poppins-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FZ Poppins';
+    src: url('fonts/FZ Poppins-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FZ Poppins';
+    src: url('fonts/FZ Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FZ Poppins';
+    src: url('fonts/FZ Poppins-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif !important;
@@ -336,7 +363,7 @@ a:hover{
     border-color: #C79156 !important;
 }
 
-.btn:hover{
+a.btn:hover{
     background: #C79156 !important;
     color: #ffffff !important;
 }
@@ -360,10 +387,14 @@ a:hover{
 
 .about-section p{
     text-align: justify;
-    font-size: 14px;
+    font-size: 18px;
+}
+.shareholder-section p {
+    font-size: 16px;
 }
 .left_brand_message p{
     text-align: justify;
+    width: 70%;
 }
 .about-section .btn{
     color: #555555 !important;
@@ -614,7 +645,7 @@ a:hover{
     left: 0;
     width: 100%;
     height: 0%;
-    background-color: rgba(255, 235, 150, 0.5); /* nền vàng nhạt có độ mờ */
+    background: linear-gradient(180deg, #C79156 0%, #1C3D53 100%); /* nền vàng nhạt có độ mờ */
     transition: height 0.4s ease;
     z-index: 1;
 }
@@ -694,16 +725,24 @@ p.text-muted{
     width: 47px;
 }
 
+a.btn{
+    padding-top: 9px;
+}
+
 footer p{
     color: #fff;
 }
 footer h5{
     color: #dba45b !important;
     margin-bottom: 50px;
+    font-weight: 700;
+    font-family: 'FZ Poppins', sans-serif !important;
 }
 footer h6{
+    font-family: 'FZ Poppins', sans-serif !important;
     color: #dba45b !important;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    font-weight: 700;
 }
 
 .footer input{
@@ -733,8 +772,14 @@ a{
 }
 h2{
     text-transform: capitalize;
+    font-family: 'FZ Poppins', sans-serif !important;
 }
-
+.real-estate-feature .content-box h4,.hero-content h1,.hero-stats .stat{
+    font-family: 'FZ Poppins', sans-serif !important;
+}
+.hero-content h5,.hero-stats .label{
+    font-family: 'Roboto', sans-serif !important;
+}
 
 /*menu mobile*/
 
@@ -883,6 +928,19 @@ h2{
     .circle-icon{
         width: 173px;
         height: 173px;
+    }
+    h2{
+        font-size: 28px !important;
+    }
+    .right_brand_message .g-4 {
+        --bs-gutter-y: 26px;
+    }
+    .container{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .left_brand_message p{
+        width: 100%;
     }
 
 }
